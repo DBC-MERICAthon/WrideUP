@@ -3,9 +3,15 @@ require 'httparty'
 
 class DriversController < ApplicationController
 
+  def index
+
+  end
+
   def trip_data
     zen_api = Zen::DriverInfo.new
-    response = zen_api.speed_data("test","test")
+    p params
+    trip_id = params[:trip_id]
+    response = zen_api.speed_data("driver_or_rider_id",trip_id)
     p response
     render :json => response
   end
