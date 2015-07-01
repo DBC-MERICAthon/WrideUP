@@ -102,8 +102,13 @@ var graph_generator = function(array,container,trip_id){
       var last = coords.length - 1;
       var cx = (coords[last].A - coords[0].A) / 2 + coords[0].A;
       var cy = (coords[last].F - coords[0].F) / 2 + coords[0].F;
+      var rx = (coords[last].A - coords[0].A);
+      var ry = (coords[last].F - coords[0].F)
+      var rscale = Math.pow(Math.pow(rx,2) + Math.pow(ry,2), 0.5);
+      console.log(rscale);
+      rscale = (rscale / 0.165607333);
+      console.log(rscale);
 
-      console.log(cx,cy);
       function initialize(coords,centerX,centerY) {
         var mapOptions = {
           zoom: 12,

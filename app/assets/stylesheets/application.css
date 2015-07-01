@@ -32,8 +32,8 @@
   display:inline-block;
   float:left;
   border:solid black 1px;
-  height:800px;
-  width:800px;
+  height:60em;
+  width:40em;
 }
 .spacer{
   display: inline-block;
