@@ -6,6 +6,7 @@ resources :drivers do
 end
 
 post '/driver_data' => 'drivers#trip_data'
+get '/driver_data/trip_location' => 'drivers#trip_location'
 get '/driver_data/trip_all' => 'drivers#trip_all'
 
   # The priority is based upon order of creation: first created -> highest priority.

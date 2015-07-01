@@ -23,6 +23,15 @@ class DriversController < ApplicationController
     render :json => response
   end
 
+  def trip_location
+    zen_api = Zen::DriverInfo.new
+    p params[:trip_id]
+    trip_id = params[:trip_id]
+    response = zen_api.get_location("driver_or_rider_id",trip_id)
+    #p response
+    render :json => response
+  end
+
   def show
   end
 end
