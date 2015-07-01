@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ #ride-column{
+  float:left;
+  display:inline-block;
+ }
+
+#graph{
+  display:inline-block;
+  float:left;
+}
+
+.spacer{
+  display: inline-block;
+  float:left;
+  margin:3em;
+}

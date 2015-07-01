@@ -33,9 +33,45 @@ var trip_listener = function(){
     }); //end ajax inital call
 
     request.done(function(response){
-      console.log(response);
+      // console.log(response);
+        var speed_data = response.speed_profile.map(function(triplett){
+          return [triplett[1],triplett[0]];
+        });
+        console.log(speed_data);
+        graph_generator(speed_data,$('#graph'),trip_id);
       })//end each-loop
     })//end ajax done function
+}
 
+var graph_generator = function(array,container,trip_id){
+  var cont = container;
+  cont.highcharts('StockChart', {
+
+
+            rangeSelector : {
+                selected : 1
+            },
+
+            title : {
+                text : 'Driver Speed Data'
+            },
+
+            series : [{
+                name : 'Trip #'+trip_id,
+                data : array,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }]
+  });
 
 }
+
+
+
+
+
+
+
+
+
