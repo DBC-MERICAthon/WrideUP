@@ -2,7 +2,7 @@ $(document).on('page:change', function(){
  if ($(".trips_list").length)
   {
     var request = $.ajax({
-      url:'http://localhost:3000/driver_data/trip_all',
+      url:'https://true-mountie-7962.herokuapp.com/trip_all',
       type:'get',
     }); //end ajax inital call
 
@@ -26,7 +26,7 @@ var trip_listener = function(){
    var tripId = $(this).html();
 
    var request = $.ajax({
-      url:'http://localhost:3000/driver_data',
+      url:'https://true-mountie-7962.herokuapp.com/driver_data',
       type:'post',
       data: {trip_id: tripId}
     }); //end ajax inital call
@@ -43,7 +43,7 @@ var trip_listener = function(){
     });//request done
 
     var request2 = $.ajax({
-          url: 'http://localhost:3000/driver_data/trip_location',
+          url: 'https://true-mountie-7962.herokuapp.com/trip_location',
           type: 'get',
           data: {trip_id: tripId}
     });
