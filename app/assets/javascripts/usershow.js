@@ -43,7 +43,7 @@ var trip_listener = function(){
     });//request done
 
     var request2 = $.ajax({
-          url: 'https://true-mountie-7962.herokuapp.com/trip_location',
+          url: 'https://true-mountie-7962.herokuapp.com/driver_data/trip_location',
           type: 'get',
           data: {trip_id: tripId}
     });
