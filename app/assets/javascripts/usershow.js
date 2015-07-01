@@ -2,7 +2,7 @@ $(document).on('page:change', function(){
  if ($(".trips_list").length)
   {
     var request = $.ajax({
-      url:'https://true-mountie-7962.herokuapp.com/trip_all',
+      url:'https://true-mountie-7962.herokuapp.com/driver_data/trip_all',
       type:'get',
     }); //end ajax inital call
 
