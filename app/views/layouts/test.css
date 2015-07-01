@@ -1,0 +1,34 @@
+img {
+  height: 100%;
+  width: 100%;
+
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 60px;
+  color:blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.bucket {
+  border: 5px solid #F0F8FF;
+}
+
+#cool_stuff {
+  font-size: 50px;
+  color: red;
+}
+
+#snoopy {
+   font-size: 60px;
+   color: blue;
+}
+
+header {
+  font-size: 75px;
+  color: #DC143C;
+}

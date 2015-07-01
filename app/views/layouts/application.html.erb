@@ -5,8 +5,41 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="h1_css.css">
 </head>
 <body>
+<header class="center">
+  HEADER RIDER 1
+</header>
+  <div class="row">
+  <div class="bucket col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <h1 class="center" >MUNI</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Garfieldand_friends.png" />
+    <h1 class="center" >GARFIELD</h1>
+    <a href="https://garfield.com/">CLICK HERE FOR GARFIELD</a>
+  </div>
+  <div class="bucket col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <h1 class="center">BART</h1>
+    <img src="http://media.tumblr.com/0f4a463afe662f9f225e3303ac750bc6/tumblr_inline_mkpqlll9B21qz4rgp.gif" />
+    <h1 class="center" >MERMAIDS</h1>
+    <a href="http://www.quotev.com/stories/Mermaid">CLICK HERE FOR MERMAIDS</a>
+  </div>
+  <div class="bucket col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <h1 class="center">PRIVATE</h1>
+    <img src="http://i.huffpost.com/gen/1684217/images/o-PEANUTS-facebook.jpg" />
+    <h1 class="center" >MERMAIDS</h1>
+    <a href="https://www.google.com">CLICK HERE FOR SNOOPY</a>
+  </div>
+  <div class="bucket col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <h1 class="center">WALK</h1>
+    <p id="cool_stuff" >ADD A WHOLE BUNCHA STUFF</p>
+    <h1 id="snoopy" class="center">Snoopy</h1>
+  </div>
+</div>
 
 <%= yield %>
 
