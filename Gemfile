@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'dotenv-rails'
 gem 'httparty'
+gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
