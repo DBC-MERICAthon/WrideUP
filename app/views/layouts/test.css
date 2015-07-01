@@ -1,3 +1,11 @@
+.logo{
+  width:50%;
+  height: 50%;
+  display: inline;
+
+
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -15,11 +23,11 @@ h1 {
 }
 
 .bucket {
-  border: 5px solid #F0F8FF;
+  border: 1px solid #F0F8FF;
 }
 
 #cool_stuff {
-  font-size: 50px;
+  font-size: 5px;
   color: red;
 }
 
@@ -34,6 +42,6 @@ header {
 }
 
 body {
-  background-color: #000000;
+  background-color: #FFFFCC;
 
 }
