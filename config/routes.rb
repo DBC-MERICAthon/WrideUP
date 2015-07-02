@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
-  resources :drivers do
-    member do
-      get '/driver_data' => 'driverinfo#trip_data'
-    end
-  end
+root 'drivers#index'
+resources :drivers do
+  resources :trips
+end
+
+post '/driver_data' => 'drivers#trip_data'
+get '/driver_data/trip_location' => 'drivers#trip_location'
+get '/driver_data/trip_all' => 'drivers#trip_all'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
